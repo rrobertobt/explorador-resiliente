@@ -1,5 +1,6 @@
 module.exports = {
   plugins: [
+    require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/custom-forms')
   ],
   theme: {
@@ -26,6 +27,16 @@ module.exports = {
         200: '#CED2D2',
         100: '#E1E5E6',
         50: '#EEF7FE'
+      },
+      yellow: {
+        300: '#FECA3B',
+        500: '#FEBD0A',
+        900: '#FFA200'
+      },
+      red: {
+        300: '#FF845D',
+        500: '#EE4E3B',
+        900: '#F53019'
       },
       error: '#F53019',
       white: '#FFFFFF'

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="mx-auto mb-12 flex flex-center justify-center">
-      <BiocreativaLogo />
+      <Logo width="150" height="115" />
     </div>
     <div
       class="
@@ -103,8 +103,7 @@
 
 <script>
 import { ValidationObserver, ValidationProvider } from 'vee-validate'
-
-import BiocreativaLogo from '~/assets/svg/biocreativa.svg'
+import Logo from '~/components/Logo'
 
 const UI_STATES = {
   BLANK: 'BLANK_STATE',
@@ -115,10 +114,11 @@ const UI_STATES = {
 
 export default {
   components: {
-    BiocreativaLogo,
+    Logo,
     ValidationObserver,
     ValidationProvider
   },
+  layout: 'authentication',
   data () {
     return {
       email: '',
